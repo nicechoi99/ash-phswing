@@ -33,6 +33,7 @@ version: 1.0.0
 date-released: 2026-11-11
 license: MIT
 repository-code: "https://github.com/nicechoi99/ash-phswing"
+doi: 10.5281/zenodo.24123111
 keywords:
   - incineration fly ash
   - pH swing

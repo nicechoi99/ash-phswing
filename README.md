@@ -1,5 +1,6 @@
 # ash-phswing: pH-swing calcium recovery from incineration fly ash with chlor-alkali reagent regeneration
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24123111.svg)](https://doi.org/10.5281/zenodo.24123111)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 
@@ -116,4 +117,4 @@ GWP100 values extracted from ecoinvent 3.11; the ecoinvent datasets themselves a
 
 ## How to cite
 
-Please cite the article above and the Zenodo archive of this repository; `CITATION.cff` holds both.
+Please cite the article above and this archive (https://doi.org/10.5281/zenodo.24123111; version 1.0.0: https://doi.org/10.5281/zenodo.24123112); `CITATION.cff` holds both.
