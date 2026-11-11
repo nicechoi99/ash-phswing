@@ -1,0 +1,55 @@
+region,key,label,tier,values,low,high,source
+EU,gate,"Treatment fee, WI BREF 2019 Table 1.8 EUR 29-363/t escalated to 2025 (residue + cake at the same fee)",A,EUR 47 / 587 per t,fee_usd_t=53.04571186227696;residue_fee_usd_t=53.04571186227696,fee_usd_t=663.9859795174667;residue_fee_usd_t=663.9859795174667,bref_wi2019;eurostat_hicp
+EU,wage,"Labour, Eurostat NACE C: EU27 2025 (base) / Netherlands 2024",A,$40 / $53.5 per h,,wage_usd_h=53.47738,eurostat_lc
+EU,lf,Location factor 1.00 (base) / Seider Western Europe 1.20,A,1.00 / 1.20,,location_factor=1.2,seider2016
+EU,elec,"Electricity: 2 c (Baidoo 2026 co-located) / grid, Eurostat NL band IG 2025-S2 10.75 c",A/C,2 / 10.75 c/kWh,elec_usd_kwh=0.02,elec_usd_kwh=0.10752006000000001,baidoo2026;eurostat_nrg
+EU,hcl,"Surplus HCl price: index $96 (Intratec, purchase basis) / $150 per t 30 % (Comtrade DEU import 2025, base)",B/C,$96 / $150 per t,hcl_price_usd_t=96.4,,intratec2025;comtrade_hcl
+EU,steam,Host steam price low / high (Cv bracket; high = German day-ahead power value),A/assumption,2.37/0.00 / 6.55/4.21 $/GJ,steam_lp_usd_gj=2.3698430679809532;steam_lt_usd_gj=0.0,steam_lp_usd_gj=6.546120567975441;steam_lt_usd_gj=4.207716333333333,dea_cv
+EU,prices,"Product prices, commodity band Ca(OH)2 200-235, PCC 205-245 $/t",A,200/205 / 235/245 $/t,price_caoh2_usd_t=200.0;price_pcc_usd_t=205.0,price_caoh2_usd_t=235.0;price_pcc_usd_t=245.0,usgs_lime;comtrade
+EU,aace,"Capital accuracy AACE 18R-97 Class 4, -20 / +30 % (uncertainty, not a lever)",A,-20 / +30 %,location_factor=0.8,location_factor=1.3,aace18r97
+EU,ca,"Chlor-alkali capital $1,184 (Hanwha 2021) / $1,925 (BREF) per t Cl2/yr; base $1,405 (Schmittinger)",A/B,"1,184 / 1,925 $/t",ca_usd_per_t_cl2=1184.0,ca_usd_per_t_cl2=1925.0,hanwha2021;schmittinger2011;bref_cak2014
+EU,energy,"Electrolysis energy, Euro Chlor IS12 2.27 / 2.94 MWh/t Cl2 (base BREF 2.4 AC)",B,2.27 / 2.94 MWh/t Cl2,energy_kwh_per_t_naoh=2047.5889929078014,energy_kwh_per_t_naoh=2641.4769929078016,eurochlor_is12
+EU,membrane,"Membrane replacement $1,000/m2 per 4 yr (assumption, base) / with gaskets $1,925 (BREF p.177)",A,"$1,000 / $1,925 per m2",,membrane_usd_m2=1925.0;membrane_life_yr=4.0,bref_cak2014
+EU,mvr,MVR USBR Report 149 $305k (base) / $328k per t/h,A,305 / 328 k$ per t/h,,mvr_usd_per_tph=328000.0,usbr149
+EU,maint,Maintenance 3 (base) / 5 % of TDC (Towler p.280),A,3 / 5 %,,maint_rest=0.02173913043478261;maint_mvr=0.02173913043478261;maint_ca=0.02173913043478261,towler2021
+EU,site,Site preparation 10 % (base) / 20 % (Seider p.442 grass-roots range),A,10 / 20 %,,site_frac=0.2,seider2016
+EU,ge,General expenses 9.55 (base) / 11.55 % of sales (Seider p.508; selling 1 / 3 %),A,9.55 / 11.55 %,,selling_frac=0.03,seider2016
+US,gate,Treatment fee range (residue + cake at the same fee),A/B,$29.76 / $68.65 per t,fee_usd_t=29.76;residue_fee_usd_t=29.76,fee_usd_t=68.65;residue_fee_usd_t=68.65,fairfax2016;eref2024
+US,wage,"Labour, Seider $40 (base) / BLS-derived Texas $68.7 per h",A,$40 / $68.7 per h,,wage_usd_h=68.7,seider2016;bls
+US,elec,"Electricity: 2 c (Baidoo 2026 co-located) / grid, regional grid 6.10 c",A/C,2 / 6.10 c/kWh,elec_usd_kwh=0.02,elec_usd_kwh=0.061,baidoo2026;eia_epm
+US,hcl,"Surplus HCl price: index $96 (Intratec, purchase basis) / $150 per t 30 % (Comtrade DEU import 2025, base)",B/C,$96 / $150 per t,hcl_price_usd_t=96.4,,intratec2025;comtrade_hcl
+US,steam,Host steam price low / high (Cv bracket; high = German day-ahead power value),A/assumption,2.37/0.00 / 6.55/4.21 $/GJ,steam_lp_usd_gj=2.3698430679809532;steam_lt_usd_gj=0.0,steam_lp_usd_gj=6.546120567975441;steam_lt_usd_gj=4.207716333333333,dea_cv
+US,prices,"Product prices, commodity band Ca(OH)2 200-235, PCC 205-245 $/t",A,200/205 / 235/245 $/t,price_caoh2_usd_t=200.0;price_pcc_usd_t=205.0,price_caoh2_usd_t=235.0;price_pcc_usd_t=245.0,usgs_lime;comtrade
+US,aace,"Capital accuracy AACE 18R-97 Class 4, -20 / +30 % (uncertainty, not a lever)",A,-20 / +30 %,location_factor=0.8,location_factor=1.3,aace18r97
+US,ca,"Chlor-alkali capital $1,184 (Hanwha 2021) / $1,925 (BREF) per t Cl2/yr; base $1,405 (Schmittinger)",A/B,"1,184 / 1,925 $/t",ca_usd_per_t_cl2=1184.0,ca_usd_per_t_cl2=1925.0,hanwha2021;schmittinger2011;bref_cak2014
+US,energy,"Electrolysis energy, Euro Chlor IS12 2.27 / 2.94 MWh/t Cl2 (base BREF 2.4 AC)",B,2.27 / 2.94 MWh/t Cl2,energy_kwh_per_t_naoh=2047.5889929078014,energy_kwh_per_t_naoh=2641.4769929078016,eurochlor_is12
+US,membrane,"Membrane replacement $1,000/m2 per 4 yr (assumption, base) / with gaskets $1,925 (BREF p.177)",A,"$1,000 / $1,925 per m2",,membrane_usd_m2=1925.0;membrane_life_yr=4.0,bref_cak2014
+US,mvr,MVR USBR Report 149 $305k (base) / $328k per t/h,A,305 / 328 k$ per t/h,,mvr_usd_per_tph=328000.0,usbr149
+US,maint,Maintenance 3 (base) / 5 % of TDC (Towler p.280),A,3 / 5 %,,maint_rest=0.02173913043478261;maint_mvr=0.02173913043478261;maint_ca=0.02173913043478261,towler2021
+US,site,Site preparation 10 % (base) / 20 % (Seider p.442 grass-roots range),A,10 / 20 %,,site_frac=0.2,seider2016
+US,ge,General expenses 9.55 (base) / 11.55 % of sales (Seider p.508; selling 1 / 3 %),A,9.55 / 11.55 %,,selling_frac=0.03,seider2016
+KR,elec,"Electricity: 2 c (Baidoo 2026 co-located) / grid, regional grid 12.80 c",A/C,2 / 12.80 c/kWh,elec_usd_kwh=0.02,elec_usd_kwh=0.1279724215562122,baidoo2026;kpx2025
+KR,hcl,"Surplus HCl price: index $96 (Intratec, purchase basis) / $150 per t 30 % (Comtrade DEU import 2025, base)",B/C,$96 / $150 per t,hcl_price_usd_t=96.4,,intratec2025;comtrade_hcl
+KR,steam,Host steam price low / high (Cv bracket; high = German day-ahead power value),A/assumption,2.37/0.00 / 6.55/4.21 $/GJ,steam_lp_usd_gj=2.3698430679809532;steam_lt_usd_gj=0.0,steam_lp_usd_gj=6.546120567975441;steam_lt_usd_gj=4.207716333333333,dea_cv
+KR,prices,"Product prices, commodity band Ca(OH)2 200-235, PCC 205-245 $/t",A,200/205 / 235/245 $/t,price_caoh2_usd_t=200.0;price_pcc_usd_t=205.0,price_caoh2_usd_t=235.0;price_pcc_usd_t=245.0,usgs_lime;comtrade
+KR,aace,"Capital accuracy AACE 18R-97 Class 4, -20 / +30 % (uncertainty, not a lever)",A,-20 / +30 %,location_factor=0.8,location_factor=1.3,aace18r97
+KR,ca,"Chlor-alkali capital $1,184 (Hanwha 2021) / $1,925 (BREF) per t Cl2/yr; base $1,405 (Schmittinger)",A/B,"1,184 / 1,925 $/t",ca_usd_per_t_cl2=1184.0,ca_usd_per_t_cl2=1925.0,hanwha2021;schmittinger2011;bref_cak2014
+KR,energy,"Electrolysis energy, Euro Chlor IS12 2.27 / 2.94 MWh/t Cl2 (base BREF 2.4 AC)",B,2.27 / 2.94 MWh/t Cl2,energy_kwh_per_t_naoh=2047.5889929078014,energy_kwh_per_t_naoh=2641.4769929078016,eurochlor_is12
+KR,membrane,"Membrane replacement $1,000/m2 per 4 yr (assumption, base) / with gaskets $1,925 (BREF p.177)",A,"$1,000 / $1,925 per m2",,membrane_usd_m2=1925.0;membrane_life_yr=4.0,bref_cak2014
+KR,mvr,MVR USBR Report 149 $305k (base) / $328k per t/h,A,305 / 328 k$ per t/h,,mvr_usd_per_tph=328000.0,usbr149
+KR,maint,Maintenance 3 (base) / 5 % of TDC (Towler p.280),A,3 / 5 %,,maint_rest=0.02173913043478261;maint_mvr=0.02173913043478261;maint_ca=0.02173913043478261,towler2021
+KR,site,Site preparation 10 % (base) / 20 % (Seider p.442 grass-roots range),A,10 / 20 %,,site_frac=0.2,seider2016
+KR,ge,General expenses 9.55 (base) / 11.55 % of sales (Seider p.508; selling 1 / 3 %),A,9.55 / 11.55 %,,selling_frac=0.03,seider2016
+JPK,gate,Treatment fee range (residue + cake at the same fee),A/B,$334.29 / $434.58 per t,fee_usd_t=334.29163602326673;residue_fee_usd_t=334.29163602326673,fee_usd_t=434.5791268302467;residue_fee_usd_t=434.5791268302467,moe_jp_ertdf
+JPK,elec,"Electricity: 2 c (Baidoo 2026 co-located) / grid, regional grid 9.13 c",A/C,2 / 9.13 c/kWh,elec_usd_kwh=0.02,elec_usd_kwh=0.09131510329611553,baidoo2026;jepx2024
+JPK,hcl,"Surplus HCl price: index $96 (Intratec, purchase basis) / $150 per t 30 % (Comtrade DEU import 2025, base)",B/C,$96 / $150 per t,hcl_price_usd_t=96.4,,intratec2025;comtrade_hcl
+JPK,steam,Host steam price low / high (Cv bracket; high = German day-ahead power value),A/assumption,2.37/0.00 / 6.55/4.21 $/GJ,steam_lp_usd_gj=2.3698430679809532;steam_lt_usd_gj=0.0,steam_lp_usd_gj=6.546120567975441;steam_lt_usd_gj=4.207716333333333,dea_cv
+JPK,prices,"Product prices, commodity band Ca(OH)2 200-235, PCC 205-245 $/t",A,200/205 / 235/245 $/t,price_caoh2_usd_t=200.0;price_pcc_usd_t=205.0,price_caoh2_usd_t=235.0;price_pcc_usd_t=245.0,usgs_lime;comtrade
+JPK,aace,"Capital accuracy AACE 18R-97 Class 4, -20 / +30 % (uncertainty, not a lever)",A,-20 / +30 %,location_factor=0.9199999999999999,location_factor=1.4949999999999999,aace18r97
+JPK,ca,"Chlor-alkali capital $1,184 (Hanwha 2021) / $1,925 (BREF) per t Cl2/yr; base $1,405 (Schmittinger)",A/B,"1,184 / 1,925 $/t",ca_usd_per_t_cl2=1184.0,ca_usd_per_t_cl2=1925.0,hanwha2021;schmittinger2011;bref_cak2014
+JPK,energy,"Electrolysis energy, Euro Chlor IS12 2.27 / 2.94 MWh/t Cl2 (base BREF 2.4 AC)",B,2.27 / 2.94 MWh/t Cl2,energy_kwh_per_t_naoh=2047.5889929078014,energy_kwh_per_t_naoh=2641.4769929078016,eurochlor_is12
+JPK,membrane,"Membrane replacement $1,000/m2 per 4 yr (assumption, base) / with gaskets $1,925 (BREF p.177)",A,"$1,000 / $1,925 per m2",,membrane_usd_m2=1925.0;membrane_life_yr=4.0,bref_cak2014
+JPK,mvr,MVR USBR Report 149 $305k (base) / $328k per t/h,A,305 / 328 k$ per t/h,,mvr_usd_per_tph=328000.0,usbr149
+JPK,maint,Maintenance 3 (base) / 5 % of TDC (Towler p.280),A,3 / 5 %,,maint_rest=0.02173913043478261;maint_mvr=0.02173913043478261;maint_ca=0.02173913043478261,towler2021
+JPK,site,Site preparation 10 % (base) / 20 % (Seider p.442 grass-roots range),A,10 / 20 %,,site_frac=0.2,seider2016
+JPK,ge,General expenses 9.55 (base) / 11.55 % of sales (Seider p.508; selling 1 / 3 %),A,9.55 / 11.55 %,,selling_frac=0.03,seider2016

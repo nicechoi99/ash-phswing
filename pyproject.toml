@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ash_phswing"
+version = "1.0.0"
+description = "Techno-economic and life-cycle model of pH-swing calcium recovery from incineration fly ash with chlor-alkali reagent regeneration"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "xgboost", "shap", "pymoo"]
+
+[project.optional-dependencies]
+aspen = ["pywin32"]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

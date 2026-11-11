@@ -1,0 +1,10 @@
+ash-phswing
+Copyright (c) 2026 Jaehyeong Choi, Kyumin Jang, Wooin Hyun, Ki Bong Lee, Changsu Kim, Ung Lee
+Licensed under the MIT License (see LICENSE).
+
+Third-party data
+----------------
+
+data/parameters/lca_factors.csv holds aggregated GWP100 factors (IPCC 2021) extracted with openLCA from the ecoinvent 3.11
+cut-off database. The ecoinvent datasets are licensed by the ecoinvent Association and are not distributed here.
+Every other input value carries its source key, resolved in data/parameters/sources.csv.

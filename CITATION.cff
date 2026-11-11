@@ -1,0 +1,59 @@
+cff-version: 1.2.0
+title: "ash-phswing: pH-swing calcium recovery from incineration fly ash with chlor-alkali reagent regeneration"
+message: "If you use this software or data, please cite both the archive and the article."
+type: software
+authors:
+  - given-names: Jaehyeong
+    family-names: Choi
+    affiliation: "Korea Institute of Science and Technology; Korea University"
+  - given-names: Kyumin
+    family-names: Jang
+    affiliation: "Korea Institute of Science and Technology"
+  - given-names: Wooin
+    family-names: Hyun
+    affiliation: "Korea Institute of Science and Technology; Korea University"
+  - given-names: Ki Bong
+    family-names: Lee
+    affiliation: "Korea University"
+  - given-names: Changsu
+    family-names: Kim
+    affiliation: "Korea Institute of Science and Technology; University of Science and Technology"
+    email: changs90.kim@kist.re.kr
+  - given-names: Ung
+    family-names: Lee
+    affiliation: "Sogang University"
+    email: ulee@sogang.ac.kr
+abstract: >-
+  Techno-economic, life cycle and optimization model of a circular pH-swing process that recovers the calcium of
+  incineration fly ash as Ca(OH)2 and CaCO3 and regenerates its HCl and NaOH by chlor-alkali electrolysis of the process
+  brine. The package prices saved Aspen Plus solutions of the flowsheet (equipment sizing, capital, operating cost,
+  discounted cash flow), computes the GWP100 by system expansion, and repeats the regional cases, sensitivity analyses,
+  Monte Carlo, surrogate, SHAP and NSGA-II analyses of the article.
+version: 1.0.0
+date-released: 2026-11-11
+license: MIT
+repository-code: "https://github.com/nicechoi99/ash-phswing"
+keywords:
+  - incineration fly ash
+  - pH swing
+  - calcium recovery
+  - chlor-alkali electrolysis
+  - techno-economic analysis
+  - life cycle assessment
+preferred-citation:
+  type: unpublished
+  title: "Circular pH-swing-based mineral carbonation process using municipal solid waste incineration fly ash with in situ electrolytic reagent regeneration"
+  notes: "Manuscript submitted to Chemical Engineering Journal."
+  authors:
+    - given-names: Jaehyeong
+      family-names: Choi
+    - given-names: Kyumin
+      family-names: Jang
+    - given-names: Wooin
+      family-names: Hyun
+    - given-names: Ki Bong
+      family-names: Lee
+    - given-names: Changsu
+      family-names: Kim
+    - given-names: Ung
+      family-names: Lee

@@ -1,0 +1,50 @@
+key,citation,doi_or_url
+model,"Model assumption or value set in this work (see docs/TEA_basis.md for the rationale)",
+stoich,"Stoichiometry / unit conversion",
+seider2016,"Seider, W.D., Lewin, D.R., Seader, J.D., Widagdo, S., Gani, R., Ng, K.M., Product and Process Design Principles: Synthesis, Analysis and Evaluation, 4th ed., Wiley, 2016",ISBN 978-1-119-35524-3
+towler2021,"Towler, G., Sinnott, R., Chemical Engineering Design, 3rd ed., Butterworth-Heinemann, 2021 (maintenance 3-5 % of TDC, p.280)",
+cepci,"Jenkins, S., 2024 CEPCI Updates, Chemical Engineering 131 (2024) 48-49 (CEPCI 800 basis)",
+irs_macrs,"US IRS Publication 946, MACRS 7-year property (half-year convention table)",https://www.irs.gov/publications/p946
+aace18r97,"AACE International Recommended Practice 18R-97, Cost estimate classification system (Class 4: -15 to -30 % / +20 to +50 %; -20/+30 % used)",
+schmittinger2011,"Schmittinger, P. et al., Chlorine, Ullmann's Encyclopedia of Industrial Chemistry, Wiley-VCH, 2011",https://doi.org/10.1002/14356007.a06_399.pub3
+stinn2020,"Stinn, C., Allanore, A., Estimating the capital costs of electrowinning processes, Electrochem. Soc. Interface 29 (2020) 44-49 (Eq. 7 rectifier term)",https://doi.org/10.1149/2.F06202IF
+bref_cak2014,"European Commission JRC, Best Available Techniques Reference Document for the Production of Chlor-alkali, 2014 (Table 4.4 electricity supply EUR 81-121/t Cl2; 2.4 MWh AC/t Cl2 new bipolar membrane cells; membranes EUR 500/m2, doubled with gaskets p.177)",https://doi.org/10.2791/13138
+eurochlor_is12,"Euro Chlor, Electrolysis and production costs, Information Sheet 12, November 2023 (electricity 2.27-2.94 MWh/t Cl2)",https://www.eurochlor.org
+hanwha2021,"Korea Herald, 21 Dec 2021: Hanwha Solutions to spend KRW 338 billion ($283.3 million) to add 270,000 t of chlor-alkali capacity (Yeosu) -> $1,184/t Cl2/yr nominal (code comment; full citation to be completed by the authors)",
+tk_nucera,"thyssenkrupp nucera, BM2.7 v7 membrane electrolyser specification: 1,960 kWh DC/t NaOH at 6 kA/m2 (code comment; full citation to be completed by the authors)",
+usbr149,"Juby, G. et al., Evaluation and Selection of Available Processes for a Zero-Liquid Discharge System for the Perris, California, Ground Water Basin, DWPR Report No. 149, U.S. Bureau of Reclamation, 2008 (Table 4.7 brine concentrator)",https://www.usbr.gov/research/dwpr/reportpdfs/report149.pdf
+randon2020,"Randon et al., Int. J. Thermodynamics 23 (2020) 128 (single-effect MVR: U, dT, isentropic efficiency) (code comment)",
+eurostat_lc,"Eurostat, Labour cost levels by NACE Rev. 2 activity [lc_lci_lev], EU27 manufacturing 2025 EUR 35.0/h; NL 2024 EUR 47.3/h",https://ec.europa.eu/eurostat/databrowser/view/lc_lci_lev/default/table
+eurostat_nrg,"Eurostat, Electricity prices for non-household consumers [nrg_pc_205], band IG, excl. VAT and recoverable taxes, 2025-S2 (NL EUR 0.0951/kWh)",https://doi.org/10.2908/NRG_PC_205
+eurostat_hicp,"Eurostat, HICP annual data [prc_hicp_aind], euro area 2025/2002 = 1.6179",https://doi.org/10.2908/PRC_HICP_AIND
+bref_wi2019,"Neuwahl, F. et al., Best Available Techniques Reference Document for Waste Incineration, EUR 29971 EN, 2019 (Table 1.8 APC residue treatment EUR 29-363/t, midpoint EUR 196)",https://doi.org/10.2760/761437
+zhang2024,"Zhang, D. et al., Toward zero-waste resource recovery from MSWI ash by electrochemical and chemical mining, Cell Rep. Sustain. 1 (2024) 100120 (host incinerator power 5 c/kWh convention)",https://doi.org/10.1016/j.crsus.2024.100120
+baidoo2026,"Baidoo, J.E. et al., Process-based cost assessment of electrochemical metals recovery from MSWI ash, Waste Manag. 217 (2026) 115500 (co-located power 2 c/kWh)",https://doi.org/10.1016/j.wasman.2026.115500
+dea_cv,"Danish Energy Agency, Technology Data for Energy Plants: Cv value (electricity lost per unit of heat extracted from an extraction steam turbine); turbine brackets are assumptions (code comment)",https://ens.dk/en/our-services/projections-and-models/technology-data
+usgs_lime,"U.S. Geological Survey, Mineral Commodity Summaries 2026: Lime; 2023 Minerals Yearbook: Lime, Table 5",https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-lime.pdf
+comtrade,"United Nations Statistics Division, UN Comtrade database, HS 252220 and 283650, reporters Germany, Korea and United States, 2023-2025",https://comtradeplus.un.org
+comtrade_hcl,"United Nations Statistics Division, UN Comtrade database, HS 280610, reporter Germany, imports 2025 ($150/t 30 wt% HCl)",https://comtradeplus.un.org
+intratec2025,"Intratec, hydrochloric acid and caustic soda market index prices, November 2025 ($96/t HCl 30 %, $199/t NaOH 50 %) (code comment; full citation to be completed by the authors)",
+usgs_soda,"U.S. Geological Survey, Mineral Commodity Summaries 2026: Soda Ash ($150/t)",https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-soda-ash.pdf
+fairfax2016,"Fairfax County (VA) FY2016 ash disposal at the county landfill, $29.76/t (code comment; full citation to be completed by the authors)",
+eref2024,"Environmental Research & Education Foundation, Analysis of MSW Landfill Tipping Fees (2024): $68.65/t",https://erefdn.org
+eia_epm,"U.S. EIA, Electric Power Monthly, Table 5.6.B, industrial electricity price 2025",https://www.eia.gov/electricity/monthly/
+bls,"US Bureau of Labor Statistics, BLS-derived Texas manufacturing labor cost $68.7/h (code comment; full citation to be completed by the authors)",
+mcee2026,"Ministry of Climate, Energy and Environment (Republic of Korea), Notice No. 2026-67: designated incineration residue 210,000 KRW/t from 2027",
+moel2024,"Ministry of Employment and Labor (Republic of Korea), FY2024 labor cost survey, manufacturing ($30.6/h derived) (code comment)",
+kpx2025,"Korea Power Exchange EPSIS, KEPCO industrial sales unit price 2025, 181.90 KRW/kWh",https://epsis.kpx.or.kr
+kpx2023,"Korea Power Exchange EPSIS, grid greenhouse-gas emission factor (0.693 kg CO2-eq/kWh used as the Korean-grid case)",https://epsis.kpx.or.kr
+moe_jp_ertdf,"Higuchi, S., Environment Research and Technology Development Fund final report 3K133007, Ministry of the Environment Japan, 2016, p.74: fly-ash off-site disposal 50,000 JPY/t; Chiba agreement 65,000 JPY/t",https://www.env.go.jp
+mhlw2021,"Ministry of Health, Labour and Welfare (Japan), 2021 General Survey on Working Conditions, manufacturing ($18.1/h derived) (code comment)",
+jepx2024,"Japan Electric Power Exchange, spot market results FY2024, Tokyo area mean 13.66 JPY/kWh",https://www.jepx.jp
+ecoinvent311,"ecoinvent Association, ecoinvent database v3.11, cut-off system model, IPCC 2021 GWP100 (authors' openLCA extract)",https://ecoinvent.org
+ecoinvent312_change,"ecoinvent Association, Change Report v3.12, Section 5.9.1 (PCC value reported as underestimated)",https://support.ecoinvent.org
+laveglia2022,"Laveglia, A. et al., Hydrated lime life-cycle assessment: current and future scenarios in four EU countries, J. Clean. Prod. 369 (2022) 133224",https://doi.org/10.1016/j.jclepro.2022.133224
+nrel2021,"NREL, Life Cycle Greenhouse Gas Emissions from Electricity Generation: Update, NREL/FS-6A50-80580, 2021",https://www.nrel.gov/docs/fy21osti/80580.pdf
+nrel2024,"Smith, B.L. et al., An Updated Life Cycle Assessment of Utility-Scale Solar PV Systems Installed in the United States, NREL/TP-7A40-87372, 2024",
+ipcc_ar5_annex3,"Schlomer, S. et al., Annex III: Technology-specific cost and performance parameters, IPCC AR5 WGIII, 2014",
+ipcc2006,"Gomez, D.R., Watterson, J.D. et al., Chapter 2: Stationary Combustion, 2006 IPCC Guidelines, Vol. 2 Energy",
+ipcc2021,"IPCC, Climate Change 2021: The Physical Science Basis (GWP100)",https://doi.org/10.1017/9781009157896
+iso14044,"ISO 14044:2006 Environmental management - Life cycle assessment - Requirements and guidelines, incl. Amd 1:2017 and Amd 2:2020",
+doka2003,"Doka, G., Life Cycle Inventories of Waste Treatment Services, Part III: Landfills, ecoinvent report No. 13, 2003",https://www.doka.ch/13_III_Landfills.pdf
+energystar2025,"US EPA ENERGY STAR, Energy Efficiency and Cost-Saving Opportunities for the Chlor-Alkali Industry, January 2025 (HCl synthesis 98-99 %)",https://www.energystar.gov

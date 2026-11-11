@@ -1,0 +1,11 @@
+# Versions used to produce and test the recorded outputs (Python 3.14.4, Windows 11).
+numpy==2.4.4
+pandas==3.0.6
+scipy==1.18.0
+scikit-learn==1.9.0
+xgboost==3.3.0
+shap==0.52.0
+pymoo==0.6.2
+pytest==9.1.1
+# Aspen Plus drivers only (scripts/aspen, Windows with Aspen Plus V14):
+# pywin32==312

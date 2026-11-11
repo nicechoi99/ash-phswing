@@ -1,0 +1,6 @@
+region,label,fee_usd_t,fee_local,wage_usd_h,location_factor,elec_usd_kwh,grid_usd_kwh,fee_source,wage_source,grid_source,location_source
+EU,"EU, co-located with the incinerator",358.5158456898718,EUR 317/t,40.0,1.0,0.05,0.10752006000000001,bref_wi2019;eurostat_hicp,eurostat_lc,eurostat_nrg,seider2016
+US,US Gulf Coast,40.0,$40/t,40.0,1.0,0.05,0.061,fairfax2016;eref2024,seider2016,eia_epm,seider2016
+KR,Korea 2027,147.74166314900802,"210,000 KRW/t",30.6,1.0,0.05,0.1279724215562122,mcee2026,moel2024,kpx2025,seider2016
+JPK,"Japan, typical off-site disposal fee",334.29163602326673,"50,000 JPY/t",18.1,1.15,0.05,0.09131510329611553,moe_jp_ertdf,mhlw2021,jepx2024,seider2016
+JPK65,"Japan, fee agreed in Chiba Prefecture",434.5791268302467,"65,000 JPY/t",18.1,1.15,0.05,0.09131510329611553,moe_jp_ertdf,mhlw2021,jepx2024,seider2016
