@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ash_phswing"
-version = "1.0.0"
+version = "1.0.1"
 description = "Techno-economic and life-cycle model of pH-swing calcium recovery from incineration fly ash with chlor-alkali reagent regeneration"
 requires-python = ">=3.10"
 dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "xgboost", "shap", "pymoo"]

@@ -6,7 +6,7 @@ CaCl2 composite feed and save the results for the cost model.
 
 Protocol (the one that produced data/aspen/design_COMP_p130.json):
   * ASH feed = feeds.json 'COMP' (CISOLID kg/h incl. CaCl2(S); MIXED: 30,000 kg/h water + K+ / Cl-), HCl 16.83 wt% (5 M);
-  * Stage I: DS-STG1 pinned at the measured endpoint dose (feeds.json acid_kg_h), not a pH target;
+  * Stage I: DS-STG1 pinned at the calibrated dose, 0.740 of the chloride-corrected base (feeds.json acid_kg_h), not a pH target;
   * Stage II pH 11.0 and Stage III pH3 by outside bisection on NaOH1 / NaOH2, Stage II then III per pass, repeated until
     both are within 0.05 pH (at least 2 passes, at most 6); 25 C in B1, B13, B14;
   * a final confirming run at the three pins; the saved state is that run.

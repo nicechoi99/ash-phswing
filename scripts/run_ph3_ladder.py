@@ -1,4 +1,4 @@
-"""Stage III pH ladder (Section 2.4, SI Figs. S23 and S25a): price the saved Aspen solutions at pH3 12.2-13.4 and pick the
+"""Stage III pH ladder (Section 2.4, SI Figs. S23 and S25a): price the saved Aspen solutions at pH3 12.2-14.0 and pick the
 design pH3 = the highest EU NPV inside the experimental window 12.5-13.0 (pH3 12.0 is infeasible: the brine carries too
 little sodium to regenerate the Stage I acid and no solution is saved).
 

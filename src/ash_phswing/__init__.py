@@ -6,4 +6,4 @@ Modules: flowsheet (saved Aspen results), equipment / capex (sizing, bare-module
 revenue), cashflow (TCI, COM, DCF), tea (one case end to end), lca (GWP), sensitivity, montecarlo, pool / pool_pricing
 (design campaign, surrogate, SHAP, NSGA-II), aspen (COM drivers, require Aspen Plus V14).
 """
-__version__ = '1.0.0'
+__version__ = '1.0.1'

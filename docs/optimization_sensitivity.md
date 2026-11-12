@@ -4,13 +4,15 @@
 
 * Three design specifications: DS-STG1 (HCl feed -> Stage I pH), DS-STG2 (NaOH1 -> Stage II pH), DS-STG3 (NaOH2 -> Stage III pH).
 * Stage I is specified by the acid **dose**, not by a pH target: DS-STG1 is pinned (bounds x 0.999 / 1.001, read back) at the
-  measured endpoint dose of the composite feed (10.23 mol HCl per kg dry ash; `data/aspen/feeds.json`, `acid_kg_h`).
+  calibrated dose of the composite feed, 0.740 of its chloride-corrected base (10.42 mol HCl per kg dry ash;
+  `data/aspen/feeds.json`, feed `COMP`, `acid_kg_h`). Because the pin holds the dose and not the pH, DS-STG1 reports block
+  status 2 in the saved design solution; the Stage I pH (5.62) is an outcome.
 * Stages II and III are solved by an **outside bisection** on the pinned NaOH flow (Aspen's inside secant diverges on the
   Ca(OH)2 buffer): Stage II then Stage III in each pass, repeated until both achieved pH values are within 0.05 of their
   targets (at least 2 passes, at most 6). A final confirming run at the three pins is the saved state; every run is checked
   to carry the pinned flows (stale results are rejected), with rerun -> Reinit -> reopen escalation.
 * Design point (`run_design_point.py`): composite feed, 5 M HCl, pH2 11.0, pH3 13.0, 25 C, NAOH2 at 5 N (17 wt%, set in
-  the template); the Stage III ladder pH3 12.0-13.4
+  the template); the Stage III ladder pH3 12.0-14.0
   uses the same protocol (pH3 12.0 is infeasible: the brine carries too little sodium to regenerate the Stage I acid).
 * **Stage II buffer jump, upper-branch rule** (`run_feed_grid.py`, feed-concentration grid of SI Fig. S24): Stage II titrates
   across a jump near pH 11 where the RGibbs model has two steady states. When the bisection bracket on NaOH1 collapses
@@ -29,9 +31,10 @@
   Stage I dose 0.65-0.85 of the chloride-corrected base of the sample; pH2 10.5-11.5; pH3 12.5-13.0; T1 10.09-39.91 C;
   T2 and T3 10.09-39.91 C.
 * Campaign re-solved with NAOH2 at 5 N (17 wt%), same Latin-hypercube samples. Converged = |pH3 - target| < 0.15
-  (pH2 reported, not gated): 348 of 350 runs.
+  (pH2 reported, not gated): 347 of 350 runs. Aspen solutions are saved for 348 runs; run 41 at 1 M ends at
+  pH3 12.71 against its target of 12.56 and is not priced.
 * Pricing (`scripts/price_pool.py`, `pool_pricing.py`): each converged solution priced on the EU and US base cases; salt-deficit
-  runs priced with full regeneration; economic guard 0.2 < LC < 5 $/kg (7 runs dropped); trim of the top 1 % levelized cost and
+  runs priced with full regeneration; economic guard 0.2 < LC < 5 $/kg (7 of the 347 runs dropped); trim of the top 1 % levelized cost and
   the bottom 1 % EU NPV -> **335 retained** (`data/pool/pool_261026n5.csv`). Re-pricing the shipped Aspen solutions
   (`data/pool/aspen_pool_261026n5.zip`) reproduces every column of the pool table to 1.6e-13 (relative).
 

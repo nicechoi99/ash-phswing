@@ -29,8 +29,8 @@ abstract: >-
   brine. The package prices saved Aspen Plus solutions of the flowsheet (equipment sizing, capital, operating cost,
   discounted cash flow), computes the GWP100 by system expansion, and repeats the regional cases, sensitivity analyses,
   Monte Carlo, surrogate, SHAP and NSGA-II analyses of the article.
-version: 1.0.0
-date-released: 2026-11-11
+version: 1.0.1
+date-released: 2026-11-12
 license: MIT
 repository-code: "https://github.com/nicechoi99/ash-phswing"
 doi: 10.5281/zenodo.24123111

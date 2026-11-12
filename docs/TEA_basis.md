@@ -7,7 +7,7 @@ Design-point values quoted in the text are the outputs of `scripts/run_base_case
 ## 1. Scope and plant
 
 * Co-located plant at the host incinerator: 240 kt/yr of dry fly ash received at the gate (30 t/h dry ash, fed as a slurry
-  with 30 t/h process water), 8,000 h/yr, 5 M HCl (16.83 wt%), Stage III pH 13.0, Stage III NaOH (NAOH2) at 5 N (17 wt%, 76.2 t/h), measured CaCl2 in
+  with 30 t/h process water), 8,000 h/yr, 5 M HCl (16.83 wt%), Stage III pH 13.0, Stage III NaOH (NAOH2) at 5 N (17 wt%, 75.0 t/h), measured CaCl2 in
   the feed (14.7 wt%).
 * Flowsheet results come from Aspen Plus V14 (ELECNRTL, RGibbs stages); the cost model reads the saved results
   (`data/aspen/design_COMP_p130.json`). Stage V carbonation is costed outside the flowsheet: the Ca(OH)2 of stream CAOH2 is

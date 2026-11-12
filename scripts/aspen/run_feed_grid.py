@@ -6,7 +6,7 @@ HCl wt% x Stage II NaOH1 wt%, Stage III NaOH2 at the cell strength (17 wt%), Sta
 Protocol per case:
   1. Stage I adiabatic probe on a fresh copy (B1 DUTY = 0; Stage I is feed-forward), then B1 isothermal at
      T1 = min(T_adiabatic, 45 C).
-  2. Stage I pinned at the measured endpoint dose (acid moles fixed, solution mass = moles x MW / wt); Stage II (pH 11.0)
+  2. Stage I pinned at the calibrated dose (acid moles fixed, solution mass = moles x MW / wt); Stage II (pH 11.0)
      and Stage III (pH 13.0) by outside bisection, up to 6 passes, every pin read back and FINAL_VAL[1] checked
      against the pin (no clipping, Clip otherwise).
   3. Stage II buffer jump: when the bisection bracket on NaOH1 collapses (< 0.5 % of the flow) while pH2 is still more than
@@ -66,7 +66,7 @@ def _worker(name, cfg, opt, rec, t0):
         F = json.load(f)['feeds']['COMP']
     comp = dict(F['cis'])
     WT = cfg['hcl']
-    acid = F['acid_kg_h'] * 0.1683 / WT                        # measured endpoint dose, any acid strength
+    acid = F['acid_kg_h'] * 0.1683 / WT                        # calibrated dose (feeds.json COMP), any acid strength
     s1 = 0.17 / cfg['n1']
     wt2 = cfg['n2_mol'] * MW_NAOH / (cfg['n2_mol'] * MW_NAOH + (1 - cfg['n2_mol']) * MW_H2O)
     s2 = 0.3131 / wt2
